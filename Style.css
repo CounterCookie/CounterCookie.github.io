@@ -10,9 +10,19 @@ and open the template in the editor.
 @import url('https://fonts.googleapis.com/css?family=Exo');
 body{
     font-family: 'Raleway', sans-serif;
-}
+   
 html,body, .container-fluid, .sidebar2,.main-content{
     height:100%;
+}
+
+
+}
+
+#introduction{
+    padding-top: 0;
+    height: 60%;
+    width: 100%;
+    background-image: url("images/background.jpg");
 }
 .sidebar2 {
     background-color: #1a1f27;
@@ -366,7 +376,7 @@ html { height: 100%;}
     top: 0px;
     left: 0px;
     margin-left: 550px;
-    margin-top: 20px;
+    margin-top: 500px;
     width: 400px;
     height: 400px;
 }
@@ -424,7 +434,7 @@ html { height: 100%;}
     margin-top: -18.75px;
 }
 #activites{
-  height: 50%;
+  height: 60%;
   width: 100%;
   background-color: black;
   margin: auto;
@@ -433,4 +443,27 @@ html { height: 100%;}
     text-align: center;
     color:white;
     font-family: 'Exo', sans-serif;
+}
+#Projects{
+    height: 50%;
+    width: 100%;
+    background-color: black;
+}
+#titleProjects{
+     text-align: center;
+    color:white;
+    font-family: 'Exo', sans-serif;
+}
+#githubButton{
+    height: 100px;
+    width: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#githubButton>:first-child{
+    line-height: 100px;
+    font-size: 4.5em;
 }
