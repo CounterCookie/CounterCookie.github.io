@@ -17,8 +17,15 @@ and open the template in the editor.
 
 
 }
-
-
+.snow-canvas {
+    display: block;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+}
     #introduction{
         margin-top: -20px;
         height: 60%;

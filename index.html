@@ -20,40 +20,22 @@ and open the template in the editor.
 
     <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='Style.css' rel='stylesheet' type='text/css'>
-    <link href="let-it-snow.css" rel="stylesheet" type="text/css">
-
+<script src="js/snow-plugin.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 <body>
+
+
     <div id='introduction'>
+
         <h1>Phong Pham</h1>
-        <div class="let-it-snow">
-
-        </div>
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="let-it-snow.min.js"></script>
-
-    <script>
-        $.letItSnow('.let-it-snow', {
-            stickyFlakes: 'lis-flake--js',
-            makeFlakes: true,
-            sticky: true
-        });
-        </script><script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+    <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1520" height="720"></canvas>
+    <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1520" height="720"></canvas>
+    <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5" image="imgs/snow.png" width="1520" height="720"></canvas>
+<script>
+$(".snow-canvas").snow();
 </script>
 
     </div>
