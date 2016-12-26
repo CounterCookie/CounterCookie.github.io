@@ -20,107 +20,108 @@ and open the template in the editor.
 
     <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='Style.css' rel='stylesheet' type='text/css'>
+    <link href="let-it-snow.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
 <body>
     <div id='introduction'>
         <h1>Phong Pham</h1>
         <div class="let-it-snow">
-            <div class="button" collectsnow>jQuery let-it-snow</div>
+
         </div>
-
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="let-it-snow.min.js"></script>
+<script src="let-it-snow.min.js"></script>
 
-        <script>
-            $.letItSnow('.let-it-snow', {
-                stickyFlakes: 'lis-flake--js',
-                makeFlakes: true,
-                sticky: true
-            });
+    <script>
+        $.letItSnow('.let-it-snow', {
+            stickyFlakes: 'lis-flake--js',
+            makeFlakes: true,
+            sticky: true
+        });
         </script><script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-    </script>
+</script>
 
+    </div>
+    <div id="wrapper">
+        <div class="overlay"></div>
 
-</div>
-<div id="wrapper">
-    <div class="overlay"></div>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 sidebar2">
+                            <div class="logo text-center">
+                                <img src="images/01_phong.jpg" class="img-responsive center-block" alt="Logo">
+                                <h4>Phong Pham</h4>
+                                <div>
+                                    <button type="button" class="btn btn-default Add-friend">
+                                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> Contact Me
+                                    </button></div>
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 sidebar2">
-                        <div class="logo text-center">
-                            <img src="images/01_phong.jpg" class="img-responsive center-block" alt="Logo">
-                            <h4>Phong Pham</h4>
-                            <div>
-                                <button type="button" class="btn btn-default Add-friend">
-                                    <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> Contact Me
-                                </button></div>
+                                </div>
+                                <br>
 
-                            </div>
-                            <br>
+                                <div class="left-navigation">
 
-                            <div class="left-navigation">
+                                    <ul class="list">
 
-                                <ul class="list">
+                                        <li><i class="fa fa-safari" aria-hidden="true"></i>Activities</li>
+                                        <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Projects</li>
+                                        <li><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</li>
+                                        <li><i class="glyphicon glyphicon-apple" aria-hidden="true"></i>School</li>
 
-                                    <li><i class="fa fa-safari" aria-hidden="true"></i>Activities</li>
-                                    <li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Projects</li>
-                                    <li><i class="fa fa-trophy" aria-hidden="true"></i>Achievements</li>
-                                    <li><i class="glyphicon glyphicon-apple" aria-hidden="true"></i>School</li>
-
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </nav>
+                <!-- /#sidebar-wrapper -->
+
+                <!-- Page Content -->
+                <!-- /#page-content-wrapper -->
+                <div id="page-content-wrapper">
+                    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
                 </div>
-            </nav>
-            <!-- /#sidebar-wrapper -->
-
-            <!-- Page Content -->
-            <!-- /#page-content-wrapper -->
-            <div id="page-content-wrapper">
-                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </button>
             </div>
-        </div>
 
-        <!-- /#wrapper -->
-        <div id="activites">
-            <div id="demo">
-                <div id="showoff">
-                    <div id="containerEarth">
-                        <h1 id='titleVisit'>PLACES I'VE VISITED</h1>
-                        <canvas id="sphere" width="400" height="400" ></canvas>
-                        <div id="glow-shadows" class="earth"></div>
-                        <canvas id="flights" width="400" height="400"></canvas>
-                        <div id="locations"></div>
+            <!-- /#wrapper -->
+            <div id="activites">
+                <div id="demo">
+                    <div id="showoff">
+                        <div id="containerEarth">
+                            <h1 id='titleVisit'>PLACES I'VE VISITED</h1>
+                            <canvas id="sphere" width="400" height="400" ></canvas>
+                            <div id="glow-shadows" class="earth"></div>
+                            <canvas id="flights" width="400" height="400"></canvas>
+                            <div id="locations"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="Projects">
-            <h2 id='titleProjects'>Projects I've started and contributed can be viewed</h2>
-            <a id='githubButton' class="btn btn-social-icon btn-lg btn-github" href='https://github.com/CounterCookie' target='_blank'"><i class="fa fa-github"></i></a>
-        </div>
-    </body>
-    </html>
+            <div id="Projects">
+                <h2 id='titleProjects'>Projects I've started and contributed can be viewed</h2>
+                <a id='githubButton' class="btn btn-social-icon btn-lg btn-github" href='https://github.com/CounterCookie' target='_blank'"><i class="fa fa-github"></i></a>
+            </div>
+        </body>
+        </html>
