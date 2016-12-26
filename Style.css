@@ -19,10 +19,12 @@ html,body, .container-fluid, .sidebar2,.main-content{
 }
 
 #introduction{
-    padding-top: 0;
+    margin-top: -20px;
     height: 60%;
     width: 100%;
     background-image: url("images/background.jpg");
+    background-size: 1600px 520px;
+    background-repeat: no-repeat;
 }
 .sidebar2 {
     background-color: #1a1f27;
