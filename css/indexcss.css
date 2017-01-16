@@ -164,6 +164,10 @@ and open the template in the editor.
      width: 30%;
      height: 20%;
   }
+.htmlImg{
+    width: 30%;
+     height: 20%;
+}
   .snow-canvas {
     display: block;
     width: 100%;
