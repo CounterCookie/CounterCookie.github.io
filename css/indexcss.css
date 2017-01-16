@@ -209,4 +209,68 @@ and open the template in the editor.
         font-size: 150px;
     }
   }
+
+.progress {
+  margin: 50px auto;
+  text-align: center;
+  
+  > .loader {
+    color: #4cd964;
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bolder;
+    margin: 50px;
+    position: relative;
+    text-align: center;
+    
+    &:after {
+      content: attr(data-percent);
+      font-size: 12px;
+      left: 0;
+      line-height: 12px;
+      margin-top: -6px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%;
+    }
+  }
+  
+  svg {
+    height: 100px;
+    width: 100px;
+    
+    &:last-child {
+      left: 0;
+      position: absolute;
+      top: 0;
+      
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      
+      circle {
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 629;
+        stroke-width: 12;
+        
+        -webkit-animation: progress-loader 2.4s 1;
+        animation: progress-loader 2.4s 1;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes progress-loader {
+  0% { stroke-dashoffset: 0; }
+}
+
+@-moz-keyframes progress-loader {
+  0% { stroke-dashoffset: 0; }
+}
+
+@keyframes progress-loader {
+  0% { stroke-dashoffset: 0; }
+}
   
