@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>Bootstrap Theme Company Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/indexcss.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/snow-plugin.js"></script>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                      <a class="navbar-brand" href="#myPage">Phong Pham</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">SKILLS</a></li>
+                        <li><a href="#education">EDUCATION</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Phong Pham</h1> 
+            <p>Currently Studying in SAIT</p> 
+            <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1520" height="720"></canvas>
+            <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1520" height="720"></canvas>
+            <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5" image="imgs/snow.png" width="1520" height="720"></canvas>
+            <script>
+                $(".snow-canvas").snow();
+            </script>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div id="about" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>About Me</h2><br>
+                    <h4>I am currently in my second year student working towards my Software Development Diploma. I am very passionate about building my career and strive to improve my work everyday. I am also a foodie and my dream is to travel the world to try different foods!</h4><br>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon glyphicon-user logo slideanim"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-globe logo slideanim"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h2>My Adventure</h2><br>
+                    <h4>I Started out as any normal human being, not knowing what I wanted to do in life. During my teenage years, I've played a lot of video games and met many passionate individuals that loved to code! However I had a hard time learning how to code on my own... But that didn't stop me from pursuing what I wanted to do, so I went to Sait Polytechnic to become a Software Developer!</h4><br>
+
+                    <p><strong>Goals: Create Website Portfolio </strong></p>
+                    <div class="progress" style='width:40%'>
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow="99"
+                             aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                            99%
+                        </div>
+                    </div>
+                    <p><strong>Graduate from SAIT in 2017!</strong></p>
+                    <div class="progress" style='width:40%'>
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            75%
+                        </div>
+                    </div>
+                    <p><strong>Create currency converter java application</strong></p>
+                    <div class="progress" style='width:40%'>
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            50%
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Container (Services Section) -->
+            <div id="services" class="container-fluid text-center">
+                <h2>Skills</h2>
+                <br>
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <img src='images/java-runtime-environment-11-535x535.png' class='javaImg'>
+                        <h4>Java</h4>
+                          <div class="progress" style='width:100%'>
+
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <span class="sr-only">80% Complete</span>
+                              </div>
+                    </div>
+                        <p>Experience: 18 Months in SAIT</p>
+                        <p>Pros: Efficentcy, clean code and exceptional documentation</p>
+                        
+                      
+                    </div>
+                    <div class="col-sm-4">
+                        <img src='images/logo-mysql-170x115.png' class='sqlImg'>
+                        <h4>MYSQL</h4>
+                         <div class="progress" style='width:100%'>
+
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                              </div>
+                    </div>
+                        <p>Experience: 18 months in SAIT</p>
+                        <p>Pros: DB design, normalization and PL/SQL Programming</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/html-icon.png" class='htmlImg'>
+                        <h4>HTML</h4>
+                        <div class="progress" style='width:100%'>
+
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <span class="sr-only">50% Complete</span>
+                              </div>
+                    </div>
+                        <p>Experience: 1 Year in Sait</p>
+                        <p>Pros:HTML5, CSS3, BOOTSTRAP, Web Applcations, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="education" class="container-fluid text-center">
+                <h2>Education</h2>
+            <div class="row">
+                
+                    <div class="col-sm-6">
+                       <div class="panel panel-primary">
+                           <div class="panel-heading">HighSchool Diploma</div>
+                           <div class="panel-body">2011-2014 <br>Father Lacombe Highschool<br>Calgary, AB</div>
+                        </div>
+                    </div>
+                 <div class="col-sm-6">
+                       <div class="panel panel-primary">
+                           <div class="panel-heading">Information Technology Software Development Diploma</div>
+                           <div class="panel-body">2015-2017 <br>SAIT - Southern Alberta Institute of Technology<br>Calgary, AB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container (Portfolio Section) -->
+            <div id="portfolio" class="container-fluid text-center bg-grey">
+              <h2>I Welcome New Friends!</h2><br>
+              <h4>More Stuff About Me!</h4>
+              <div class="row text-center slideanim">
+                <div class="col-sm-4">
+                  <div class="thumbnail">
+                    <a href="https://www.linkedin.com/in/phong-pham-780591105" target="_blank"><img src="images/linkedin-256.png" class="linkedInImg"></a>
+                    <p><strong>LinkedIn</strong></p>
+                    <p>Come visit my page!</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumbnail">
+                      <a href="https://www.instagram.com/wintertoffee/" target="_blank"> <img src="images/insta.png" alt="instagram" width="400" height="300"></a>
+                    <p><strong>Instagram!</strong></p>
+                  <p>Love food as much as I do? Follow along on my adventure!</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumbnail">
+                    <a href="https://github.com/CounterCookie" target="_blank"><img src="images/github.png" alt="github"></a>
+                    <p><strong>GitHub</strong></p>
+                    <p>See What Projects I've Made!</p>
+                  </div>
+                </div>
+              </div><br>
+
+            <!-- Container (Contact Section) -->
+            <div id="contact" class="container-fluid bg-grey">
+                <h2 class="text-center">CONTACT</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>Have a question or want to discuss something with me? Send me an Email!</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>Calgary, AB</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> phongp27@gmail.com</p>
+                    </div>
+                    <form action="mailto:phongp27@gmail.com" method="post" enctype="text/plain">
+                    <div class="col-sm-7 slideanim">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        
+
+            <footer class="container-fluid text-center">
+                <a href="#myPage" title="To Top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+
+            </footer>
+
+            <script>
+                $(document).ready(function () {
+                    // Add smooth scrolling to all links in navbar + footer link
+                    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+
+                            // Store hash
+                            var hash = this.hash;
+
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 900, function () {
+
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
+
+                    $(window).scroll(function () {
+                        $(".slideanim").each(function () {
+                            var pos = $(this).offset().top;
+
+                            var winTop = $(window).scrollTop();
+                            if (pos < winTop + 600) {
+                                $(this).addClass("slide");
+                            }
+                        });
+                    });
+                })
+            </script>
+
+    </body>
+</html>
