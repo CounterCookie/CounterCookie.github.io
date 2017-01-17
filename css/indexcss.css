@@ -55,8 +55,8 @@ and open the template in the editor.
       border-radius: 0;
   }
   .thumbnail img {
-      width: 40%;
-      height: 40%;
+      width: 20%;
+      height: 20%;
       margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
